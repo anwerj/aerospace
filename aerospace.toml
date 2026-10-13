@@ -14,10 +14,11 @@ outer.bottom     = 0
 outer.top        = 0
 outer.right      = 0
 
-# Left to right: 1 = CB272K (main), 2 = Built-in Retina Display.
+# 1 = macOS main display (external). 2 = built-in laptop display.
+# Patterns, not a monitor model name, so this works on both laptops.
 [workspace-to-monitor-force-assignment]
-1 = 1
-2 = 2
+1 = 'main'
+2 = 'built-in'
 
 [mode.main.binding]
 alt-1 = 'workspace 1'
