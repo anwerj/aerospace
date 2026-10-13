@@ -1,0 +1,38 @@
+config-version = 2
+start-at-login = true
+
+default-root-container-layout = 'accordion'
+
+# config-version 2 drops empty workspaces unless they are listed here.
+persistent-workspaces = ['1', '2']
+
+[gaps]
+inner.horizontal = 0
+inner.vertical   = 0
+outer.left       = 0
+outer.bottom     = 0
+outer.top        = 0
+outer.right      = 0
+
+# Left to right: 1 = CB272K (main), 2 = Built-in Retina Display.
+[workspace-to-monitor-force-assignment]
+1 = 1
+2 = 2
+
+[mode.main.binding]
+alt-1 = 'workspace 1'
+alt-2 = 'workspace 2'
+
+alt-shift-1 = 'move-node-to-workspace 1 --focus-follows-window'
+alt-shift-2 = 'move-node-to-workspace 2 --focus-follows-window'
+
+# WASD. No up/down: windows stay in one horizontal row.
+alt-a = 'focus left'
+alt-d = 'focus right'
+alt-w = 'focus-monitor --wrap-around next'
+alt-s = 'focus-monitor --wrap-around prev'
+
+alt-shift-a = 'move left'
+alt-shift-d = 'move right'
+alt-shift-w = 'move-node-to-monitor --wrap-around --focus-follows-window next'
+alt-shift-s = 'move-node-to-monitor --wrap-around --focus-follows-window prev'
