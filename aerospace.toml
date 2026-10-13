@@ -6,6 +6,8 @@ default-root-container-layout = 'accordion'
 # config-version 2 drops empty workspaces unless they are listed here.
 persistent-workspaces = ['1', '2']
 
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+
 [gaps]
 inner.horizontal = 0
 inner.vertical   = 0

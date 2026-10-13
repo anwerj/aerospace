@@ -21,6 +21,7 @@ The external monitor is the macOS main display (System Settings → Displays →
 - Windows stay in one horizontal row. No vertical splits, no stacked containers, no up/down movement inside a workspace.
 - All gaps stay 0.
 - Start AeroSpace at login.
+- When the focused monitor changes, move the cursor to that monitor's center with `on-focused-monitor-changed = ['move-mouse monitor-lazy-center']`. This includes Command-Tab onto the other display. Do not use `on-focus-changed` for this. Left and right focus on the same screen must not move the cursor.
 
 ## Keys
 
